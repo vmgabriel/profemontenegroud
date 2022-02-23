@@ -11,7 +11,7 @@ class PeriphepaltypeForm(forms.ModelForm):
 
     class Meta:
         model = models.periphepaltype.Periphepaltype
-        fields = ["name", "description", ]
+        fields = ["name", "description", "name_montenegro", ]
 
 
 class PeriphepalForm(forms.ModelForm):
