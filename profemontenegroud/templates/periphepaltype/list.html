@@ -26,6 +26,7 @@ Page {{ page_obj.number }} of {{ paginator.num_pages }}        </p>
             <th scope="col">Id</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
+            <th scope="col">Name_montenegro</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -35,6 +36,7 @@ Page {{ page_obj.number }} of {{ paginator.num_pages }}        </p>
 {{ object.id }}              </td>
               <td>{{ object.name }}</td>
               <td>{{ object.description }}</td>
+              <td>{{ object.name_montenegro }}</td>
               <td>
                 <a class="btn btn-secondary btn-small" href="{% url 'profemontenegrouds:periphepaltype-edit' pk=object.pk %}"><i class="bi bi-pencil-fill"></i></a>
                 <a class="btn btn-danger btn-small" href="{% url 'profemontenegrouds:periphepaltype-delete' pk=object.pk %}"><i class="bi bi-trash-fill"></i></i></a>

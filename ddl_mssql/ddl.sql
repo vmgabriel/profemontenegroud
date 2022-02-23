@@ -2,6 +2,7 @@ CREATE TABLE Presidency_Data.tbl_periphepaltype (
   pertype_id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
   pertype_name VARCHAR(120) NOT NULL,
   pertype_description VARCHAR(200) NOT NULL,
+  pertype_name_montenegro VARCHAR(120) NOT NULL,
   pertype_is_valid BIT NOT NULL DEFAULT 1,
   pertype_created_at DATETIME NOT NULL DEFAULT GETDATE(),
   pertype_updated_at DATETIME NOT NULL DEFAULT GETDATE(),
