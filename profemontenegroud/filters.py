@@ -10,16 +10,18 @@ from . import models
 class PeriphepaltypeFilter(django_filters.FilterSet):
     name = django_filters.CharFilter(label="Name", lookup_expr="icontains")
     description = django_filters.CharFilter(label="Description", lookup_expr="icontains")
+    name_montenegro = django_filters.CharFilter(label="Name_montenegro", lookup_expr="icontains")
     sort = django_filters.OrderingFilter(
         fields=(
             ("name", "Name"),
             ("description", "Description"),
+            ("name_montenegro", "Name_montenegro"),
         ),
     )
 
     class Meta:
         model = models.periphepaltype.Periphepaltype
-        fields = ["name", "description", ]
+        fields = ["name", "description", "name_montenegro", ]
 
 
 class PeriphepalFilter(django_filters.FilterSet):
