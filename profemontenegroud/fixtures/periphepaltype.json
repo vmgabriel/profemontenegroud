@@ -4,7 +4,8 @@
     "model": "profemontenegroud.periphepaltype",
     "fields": {
       "name": "Update",
-      "description": "Update"
+      "description": "Update",
+      "name_montenegro": "Update"
     }
   },
   {
@@ -12,7 +13,8 @@
     "model": "profemontenegroud.periphepaltype",
     "fields": {
       "name": "Update",
-      "description": "Update"
+      "description": "Update",
+      "name_montenegro": "Update"
     }
   },
   {
@@ -20,7 +22,8 @@
     "model": "profemontenegroud.periphepaltype",
     "fields": {
       "name": "Update",
-      "description": "Update"
+      "description": "Update",
+      "name_montenegro": "Update"
     }
   }
 ]

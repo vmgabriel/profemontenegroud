@@ -20,6 +20,8 @@ class PeriphepaltypeTestCase(TestCase):
         self.assertEqual(periphepaltype_name.count(), 3)
         periphepaltype_description = Periphepaltype.objects.filter(description__icontains="Update")
         self.assertEqual(periphepaltype_description.count(), 3)
+        periphepaltype_name_montenegro = Periphepaltype.objects.filter(name_montenegro__icontains="Update")
+        self.assertEqual(periphepaltype_name_montenegro.count(), 3)
 
     def test_should_get_none_data(self):
         current_time = datetime.strptime("2020-12-18 3:11:09", "%Y-%m-%d %H:%M:%S")
@@ -27,6 +29,8 @@ class PeriphepaltypeTestCase(TestCase):
         self.assertEqual(periphepaltype_name.count(), 0)
         periphepaltype_description = Periphepaltype.objects.filter(description__icontains="2")
         self.assertEqual(periphepaltype_description.count(), 0)
+        periphepaltype_name_montenegro = Periphepaltype.objects.filter(name_montenegro__icontains="2")
+        self.assertEqual(periphepaltype_name_montenegro.count(), 0)
 
     def test_get_data(self):
         pk = 2
@@ -39,15 +43,18 @@ class PeriphepaltypeTestCase(TestCase):
         data = Periphepaltype.objects.get(pk=pk)
         data.name = "Update"
         data.description = "Update"
+        data.name_montenegro = "Update"
 
         data.save()
         self.assertEqual(data.name, "Update")
         self.assertEqual(data.description, "Update")
+        self.assertEqual(data.name_montenegro, "Update")
 
     def test_create_data(self):
         new_object = {
             "name": "Update",
-            "description": "Update"
+            "description": "Update",
+            "name_montenegro": "Update"
         }
         data = Periphepaltype(**new_object)
         data.save()

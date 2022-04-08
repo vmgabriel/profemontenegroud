@@ -15,6 +15,9 @@
       <div class="input-field col s12">
         <label for="description">{{ form.description.label }}</label>
 {{ form.description }}      </div>
+      <div class="input-field col s12">
+        <label for="name_montenegro">{{ form.name_montenegro.label }}</label>
+{{ form.name_montenegro }}      </div>
       <div class="buttons">
         <a class="btn btn-secondary" href="{% if is_update %}{% url 'profemontenegrouds:periphepaltype-edit' pk=object.pk %}{% else %}{% url 'profemontenegrouds:periphepaltype-new' %}{% endif %}">Cancel</a>
         <input class="btn btn-primary" type="submit" value="{% if is_update %}Update{% else %}Save{% endif %}">

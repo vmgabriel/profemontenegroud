@@ -1,6 +1,6 @@
 {
     "info": {
-        "_postman_id": "578d8d01-741e-407c-8be6-d4d57fd94f36",
+        "_postman_id": "5ccd7db5-b4d9-4c06-914e-a8bb97c24825",
         "name": "profemontenegroud",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
@@ -240,7 +240,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"test data\",\n    \"description\": \"test data\"\n}"
+                            "raw": "{\n    \"name\": \"test data\",\n    \"description\": \"test data\",\n    \"name_montenegro\": \"test data\"\n}"
                         },
                         "url": {
                             "raw": "{{urlServer}}:{{portServer}}/api/v1/periphepaltypes/",
@@ -292,7 +292,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"test data\",\n    \"description\": \"test data\"\n}"
+                            "raw": "{\n    \"name\": \"test data\",\n    \"description\": \"test data\",\n    \"name_montenegro\": \"test data\"\n}"
                         },
                         "url": {
                             "raw": "{{urlServer}}:{{portServer}}/api/v1/periphepaltypes/1",
